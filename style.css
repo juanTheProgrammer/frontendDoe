@@ -1,0 +1,415 @@
+/* Barra de navegacion */
+
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+  }
+  
+  /* Estilos generales */
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  
+  .seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+  }
+  
+  .seccion-clara {
+    color: black;
+    background-color: white;
+  }
+  
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  
+  .seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+  }
+  
+  .seccion-texto {
+    font-size: 1.2rem;
+  }
+  
+  .btn-info {                /* Personalizando el boton info */
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+  
+  .texto-negro {
+    color: black;
+  }
+  
+  .texto-blanco {
+    color: white;
+  }
+  
+  /* Seccion Hero */
+  
+  .hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+  }
+  
+  .hero-principal {
+    padding: 3rem;
+  }
+  
+  .hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+  
+  .hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+  }
+  
+  /* Sobre mi */
+  
+  .sobre-mi {
+    height: 500px;
+    padding: 10px;
+  }
+  
+  .sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  /* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {            /* Personalizando columnas */
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;        /* personaliza la transparencia de las columnas */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;     /* distribuye los elementos de forma apropiada  */
+  transition: all 0.2s ease-in;   /* Transicion de color al pasar el mouse */
+}
+
+.experiencia .columna:hover {     /* Personalizando columnas 'over' permite personalizar cuando pasamos el mouse por el elemento */
+  color: white;
+  background-color: #1b1b32;
+}
+
+.experiencia i {       /* Personalizando el icono */
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;   /* Resalta en negrita el titulo */
+  margin: 10px 0;
+}
+
+.badges-contenedor {      /* Personalizando el badge */
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {        /* Personalizando imagenes en la seccion proyectos recientes */
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;          /* Padding parte superior */
+  margin-bottom: 40px;        /* Margen Parte inferior */
+}
+
+.overlay {                 /* Contenido adicional que se coloca sobre una imagen */
+  transition: all 0.2s ease;    /* 'all' aplica todos los elementos, '0.2s' aplica al tiempo de los efectos, 'easy' is a property of transition-timing-function 
+  that controls how smoothly an element transitions between different states */
+  opacity: 0;                 
+  position: absolute;     /* absolute: The element is removed from the normal document flow and positioned entirely based on top, right, bottom, and left values 
+  relative to its nearest positioned ancestor (parent or further up the chain).*/
+  top: 50%;         /* 'top' refiere a la medida de la parte superior */
+  left: 50%;
+  transform: translate(-50%, -50%);   /* The transform property in CSS allows you to manipulate the visual appearance of an element, the 'traslate' function 
+  It specifies how to move an element along the horizontal (x-axis) and vertical (y-axis) directions.*/
+  text-align: center;
+}
+
+.overlay p {        /* Personalizando los parrafos en overlay */
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;      /* Personalizando margen de la parte inferior */
+}
+
+.proyecto {        
+  position: relative;     /* Cuando el cursor esta sobre la imagen se muestra el texto */
+}
+
+.proyecto:hover img {      /* Aplica estilo 'overlay' cuando se pasa el mouse sobre la imagen, en este caso se le gradua la transparencia */
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {      /* refiere que cuando este sobre el elemento se aplique el estilo 'overlay' */
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/* Articulos */
+
+.articulos {
+  min-height: 500px;
+  padding: 30px;
+}
+
+.articulos .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.articulos .card-header {           /* Personaliza el subtitulo de la tarjeta */
+  font-weight: bold;
+}
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {       /* Personaliza los elementos del container*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {         /* Personalizando nombre del cliente */
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/* Contacto */
+
+.contacto .container {       /* Agregado estilo al container de 'contactos' */
+  max-width: 1100px;     /* Ancho maximo */   
+  min-height: 200px;     /* Altura minima */
+  padding: 20px;
+}
+
+.contacto .rectangulo {        /* personalizando el rectangulo azul que contiene contacto */
+  margin-top: -5rem;      /* valor negativo logra un efecto en que el elemento esta entre una seccion y otra */
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;        /* 'box-shadow' agrega sombra a el rectangulo o caja */
+}
+
+.contacto .row {         /* personalizando fila */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {     /* personalizando descripcion */
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {           /* personalizando botton */
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {       /* 'hover' le da efecto al cursor al pasar sobre 'contacto' */
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {          /* personalizando icino del botton */
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina (footer) */
+
+footer {            /* Añadiendo estilo al pie de pagina */
+  min-height: 500px;
+}
+
+.footer-logo {      /* Añadiendo estilo al logo de pagina web */
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {         /* Añadiendo estilo al texto de pagina web */
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {       /* Añadiendo medidas y efectos a los iconos de las redes sociales en el footer de pagina web */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {        /* Añadiendo estilo a los iconos de la pagina web */
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {      /* Adaptando el tamaño de la letra para dispositivos pequeños en proyectos */
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {              /* Adaptando el tamaño de los iconos para los dispositivos pequeños en proyectos */
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {        /* Adapta la  imagen a diferentes tamaños */  
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {             /* Adapta el texto a dispositivos pequeños */
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
